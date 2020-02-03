@@ -39,7 +39,7 @@ echo "Image Flavour: $IMAGE_FLAVOUR"
 echo ""
 echo "Pulling published images for layer cache.."
 echo ""
-docker pull meanbee/magento2-php:${PHP_VERSION}-${IMAGE_FLAVOUR}
+docker pull creamcloud/magento2-php:${PHP_VERSION}-${IMAGE_FLAVOUR}
 
 ################################################################################
 # Build the image locally and name it $IMAGE_NAME

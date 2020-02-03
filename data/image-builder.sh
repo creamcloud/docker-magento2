@@ -48,7 +48,7 @@ DEBUG=false
 SAMPLE_DATA=false
 CREDENTIALS="COMPOSER_AUTH"
 PUSH=false
-IMAGE_NAMESPACE="meanbee"
+IMAGE_NAMESPACE="creamcloud"
 IMAGE_NAME="magento2-data"
 TAG_SUFFIX=""
 BUILD_DIRECTORY=$(pwd)
@@ -92,7 +92,7 @@ DOCKER_RUN="\
     -v $MAGENTO_DIRECTORY:/src \
     -e COMPOSER_ALLOW_SUPERUSER=1 \
     -e $CREDENTIALS \
-    meanbee/magento2-php:7.0-cli \
+    creamcloud/magento2-php:7.1-cli \
 "
 
 # Prepare build directory
